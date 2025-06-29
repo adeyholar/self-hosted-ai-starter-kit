@@ -1,3 +1,4 @@
 *.sql
 *.env
 *.code-workspace
+*.pdf
