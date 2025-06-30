@@ -1,8 +1,9 @@
-# Stop existing containers
-docker-compose down
+# Use an official base image
+FROM python:3.11-slim
 
-# Rebuild with new requirements
-docker-compose build --no-cache
+# (Optional) Add your setup instructions here, e.g., copy files, install dependencies
+# COPY . /app
+# WORKDIR /app
+# RUN pip install -r requirements.txt
 
-# Start enhanced system
-docker-compose up -d
+# The actual docker-compose commands should be run from a shell script, not in the Dockerfile.
